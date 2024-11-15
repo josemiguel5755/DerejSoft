@@ -307,8 +307,8 @@ textarea {
 }
 
 footer {
-    background-color: #f5f5f7;
-    color: #86868b;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
     text-align: center;
     padding: 30px 0;
     font-size: 12px;
@@ -318,13 +318,27 @@ footer {
 }
 
 .footer-link {
-    color: #515154;
+    color: #fefeff;
     text-decoration: none;
     margin: 0 10px;
 }
 
 .footer-link:hover {
     text-decoration: underline;
+}
+
+.redes ul {
+    display: flex;
+    gap: 30px;
+}
+
+.redes li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.redes img {
+    width: 40px;
 }
 
 @media (max-width: 734px) {
