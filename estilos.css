@@ -499,3 +499,122 @@ footer {
 
 
 
+
+
+
+/* pagina de nosotros */
+
+/* Estilos existentes se mantienen igual */
+
+/* Nuevos estilos para la página Nosotros */
+#nosotros-hero {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 150px 0;
+}
+
+#nuestra-historia, #valores, #equipo, #unete {
+    padding: 80px 0;
+}
+
+#nuestra-historia, #unete {
+    background-color: var(--background-color);
+}
+
+#valores {
+    background: linear-gradient(135deg, #0c2d48, #145da0);
+    color: #ffffff;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.value-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+}
+
+.value-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.value-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+#equipo {
+    background-color: var(--background-color);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.team-member {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.team-member p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+#unete .cta-button {
+    margin-top: 20px;
+}
+
+@media (max-width: 734px) {
+    #nosotros-hero {
+        padding: 100px 0;
+    }
+
+    #nuestra-historia, #valores, #equipo, #unete {
+        padding: 50px 0;
+    }
+
+    .values-grid, .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card, .team-member {
+        padding: 20px;
+    }
+}
