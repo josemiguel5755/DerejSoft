@@ -556,6 +556,13 @@ footer {
     color: #ffffff;
 }
 
+.about-content p {
+    margin-left: 20px;
+    text-align: justify;
+    width: 90%;
+    transform: translate(30px);
+}
+
 #equipo {
     background-color: var(--background-color);
 }
@@ -616,5 +623,9 @@ footer {
 
     .value-card, .team-member {
         padding: 20px;
+    }
+
+    .about-content p {
+        margin: 0;
     }
 }
