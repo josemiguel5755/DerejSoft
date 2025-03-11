@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://derejsoft.com/sitemap.xml
