@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - DerejSoft</title>
+    <style>
+        :root {
+            --primary-color: #3a6ea5;
+            --secondary-color: #004e98;
+            --accent-color: #ff6b6b;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --border-color: #ddd;
+            --highlight-bg: #f8f9fa;
+            --highlight-border: #e9ecef;
+            --table-header-bg: #e9f2fa;
+            --table-border: #dee2e6;
+            --table-row-hover: #f2f7fd;
+            --primary:#ffe65d;
+            --text: #a2231d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+            padding: 0;
+            margin: 0;
+            -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--text);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .privacy-container {
+            padding: 3rem 0;
+            width: 100%;
+        }
+        
+        .privacy-content {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 100%;
+        }
+        
+        .last-updated {
+            text-align: right;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+            word-wrap: break-word;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            word-wrap: break-word;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin: 1.5rem 0 1rem;
+            word-wrap: break-word;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+            transition: transform 0.2s ease;
+        }
+        
+        .section:hover {
+            transform: translateX(5px);
+        }
+        
+        .highlight-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid var(--highlight-border);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .highlight-box h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+        
+        .table-container {
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+            width: 100%;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            min-width: 600px; /* Ensures table doesn't get too compressed */
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border: 1px solid var(--table-border);
+        }
+        
+        th {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        
+        tr:hover {
+            background-color: var(--table-row-hover);
+        }
+        
+        .table-of-contents {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+        
+        .table-of-contents h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .table-of-contents ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+        
+        .table-of-contents li {
+            margin-bottom: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+        
+        .table-of-contents li:hover {
+            transform: translateX(5px);
+        }
+        
+        .table-of-contents a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+            display: inline-block;
+            word-wrap: break-word;
+        }
+        
+        .table-of-contents a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+        
+        .card {
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
+            width: 100%;
+        }
+        
+        .card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        .card h3 {
+            margin-top: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .redes ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-left: 0;
+            padding-left: 0;
+            justify-content: center;
+        }
+        
+        .redes li {
+            text-decoration: none;
+            list-style: none;
+            margin-bottom: 15px;
+        }
+        
+        .redes img {
+            width: 40px;
+            height: auto;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+            width: 100%;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo span {
+            color: var(--text);
+        }
+        
+        .footer-links {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+            opacity: 0.9;
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        /* Enhanced responsive styles */
+        @media (max-width: 992px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .logo {
+                font-size: 32px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .privacy-content {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .table-container {
+                margin: 1rem 0;
+            }
+            
+            th, td {
+                padding: 0.5rem;
+            }
+            
+            .logo {
+                font-size: 28px;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .footer-links a {
+                margin: 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .privacy-content {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            h3 {
+                font-size: 1.1rem;
+            }
+            
+            .logo {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .highlight-box, .card {
+                padding: 1rem;
+            }
+            
+            .redes ul {
+                gap: 15px;
+            }
+            
+            .redes img {
+                width: 32px;
+            }
+        }
+        
+        /* Fix for very small screens */
+        @media (max-width: 320px) {
+            .privacy-content {
+                padding: 0.75rem;
+            }
+            
+            .logo {
+                font-size: 20px;
+            }
+            
+            .subtitle {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Derej<span>Soft</span></div>
+            <div class="subtitle">Política de Privacidad</div>
+        </div>
+    </header>
+    
+    <div class="privacy-container">
+        <div class="container">
+            <div class="privacy-content">
+                <div class="last-updated">Última actualización: 29 de marzo de 2025</div>
+                
+                <h1>Política de Privacidad</h1>
+                
+                <div class="highlight-box">
+                    <h3>Información importante</h3>
+                    <p>Esta Política de Privacidad describe cómo DerejSoft recopila, utiliza y comparte su información personal cuando utiliza nuestros servicios, aplicaciones y sitio web. Por favor, lea esta política detenidamente para entender nuestras prácticas con respecto a sus datos personales.</p>
+                    <p>Al utilizar nuestros servicios, usted acepta las prácticas descritas en esta Política de Privacidad. Si no está de acuerdo con esta política, por favor no utilice nuestros servicios.</p>
+                </div>
+                
+                <div class="table-of-contents">
+                    <h3>Contenido</h3>
+                    <ul>
+                        <li><a href="#introduccion">1. Introducción y alcance</a></li>
+                        <li><a href="#informacion">2. Información recopilada</a></li>
+                        <li><a href="#uso">3. Uso de la información</a></li>
+                        <li><a href="#comparticion">4. Compartición de datos</a></li>
+                        <li><a href="#derechos">5. Derechos y opciones del usuario</a></li>
+                        <li><a href="#seguridad">6. Seguridad de datos</a></li>
+                        <li><a href="#retencion">7. Retención de información</a></li>
+                        <li><a href="#transferencias">8. Transferencias internacionales</a></li>
+                        <li><a href="#menores">9. Privacidad de menores</a></li>
+                        <li><a href="#enlaces">10. Enlaces a terceros</a></li>
+                        <li><a href="#cambios">11. Cambios en la política</a></li>
+                        <li><a href="#contacto">12. Información de contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div id="introduccion" class="section">
+                    <h2>1. Introducción y alcance</h2>
+                    <p>DerejSoft ("nosotros", "nuestro" o "la Compañía") se compromete a proteger la privacidad y la seguridad de la información personal de nuestros usuarios. Esta Política de Privacidad se aplica a toda la información recopilada a través de nuestro sitio web, aplicaciones, productos y servicios (colectivamente, los "Servicios").</p>
+                    <p>Esta política describe:</p>
+                    <ul>
+                        <li>Qué información recopilamos y cómo la obtenemos</li>
+                        <li>Cómo utilizamos esa información</li>
+                        <li>Con quién compartimos la información</li>
+                        <li>Sus derechos y opciones con respecto a su información</li>
+                        <li>Cómo protegemos su información</li>
+                        <li>Cuánto tiempo conservamos su información</li>
+                        <li>Otros aspectos importantes relacionados con su privacidad</li>
+                    </ul>
+                    <p>Al acceder o utilizar nuestros Servicios, usted confirma que ha leído, entendido y aceptado los términos de esta Política de Privacidad.</p>
+                </div>
+                
+                <div id="informacion" class="section">
+                    <h2>2. Información recopilada</h2>
+                    
+                    <div class="card">
+                        <h3>Información que usted nos proporciona</h3>
+                        <p>Recopilamos información que usted nos proporciona directamente cuando:</p>
+                        <ul>
+                            <li>Crea una cuenta o se registra para utilizar nuestros Servicios</li>
+                            <li>Completa formularios o perfiles en nuestros Servicios</li>
+                            <li>Realiza compras a través de nuestros Servicios</li>
+                            <li>Se comunica con nosotros por correo electrónico, teléfono o cualquier otro medio</li>
+                            <li>Participa en encuestas, concursos o promociones</li>
+                            <li>Publica contenido o comentarios en nuestros Servicios</li>
+                        </ul>
+                        <p>Esta información puede incluir:</p>
+                        <ul>
+                            <li>Información de identificación personal (como nombre, dirección de correo electrónico, número de teléfono, dirección postal)</li>
+                            <li>Información de pago (como detalles de tarjeta de crédito, dirección de facturación)</li>
+                            <li>Información de perfil (como foto de perfil, intereses, preferencias)</li>
+                            <li>Comunicaciones y correspondencia que mantiene con nosotros</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Información recopilada automáticamente</h3>
+                        <p>Cuando utiliza nuestros Servicios, recopilamos automáticamente cierta información, incluyendo:</p>
+                        <ul>
+                            <li>Información del dispositivo (como tipo de dispositivo, sistema operativo, identificadores únicos de dispositivo)</li>
+                            <li>Información de registro (como dirección IP, fecha y hora de acceso, páginas visitadas)</li>
+                            <li>Información de ubicación (como ubicación geográfica basada en su dirección IP o información de GPS con su consentimiento)</li>
+                            <li>Información de uso (como características utilizadas, patrones de uso, tiempo de permanencia)</li>
+                            <li>Información de cookies y tecnologías similares (como se describe en nuestra Política de Cookies)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Información de terceros</h3>
+                        <p>Podemos recibir información sobre usted de terceros, incluyendo:</p>
+                        <ul>
+                            <li>Socios comerciales con los que ofrecemos servicios co-branded o realizamos actividades de marketing conjuntas</li>
+                            <li>Plataformas de redes sociales cuando utiliza sus credenciales para acceder a nuestros Servicios</li>
+                            <li>Proveedores de servicios que nos ayudan a verificar cierta información (como validar direcciones)</li>
+                            <li>Fuentes públicamente disponibles</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="uso" class="section">
+                    <h2>3. Uso de la información</h2>
+                    <p>Utilizamos la información que recopilamos para los siguientes propósitos:</p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Propósito</th>
+                                    <th>Descripción</th>
+                                    <th>Base legal (RGPD)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Proporcionar y mejorar nuestros Servicios</td>
+                                    <td>Para operar, mantener, administrar y proporcionar las características y funcionalidades de nuestros Servicios; para mejorar y personalizar su experiencia.</td>
+                                    <td>Ejecución de contrato, Interés legítimo</td>
+                                </tr>
+                                <tr>
+                                    <td>Comunicación</td>
+                                    <td>Para comunicarnos con usted sobre su cuenta, responder a sus consultas, proporcionarle soporte técnico y enviarle actualizaciones importantes.</td>
+                                    <td>Ejecución de contrato, Interés legítimo</td>
+                                </tr>
+                                <tr>
+                                    <td>Marketing y publicidad</td>
+                                    <td>Para enviarle información sobre nuevos productos, servicios, ofertas especiales y eventos que creemos que pueden ser de su interés.</td>
+                                    <td>Consentimiento, Interés legítimo</td>
+                                </tr>
+                                <tr>
+                                    <td>Análisis y mejora</td>
+                                    <td>Para entender cómo los usuarios acceden y utilizan nuestros Servicios, con el fin de mejorar la funcionalidad y desarrollar nuevas características.</td>
+                                    <td>Interés legítimo</td>
+                                </tr>
+                                <tr>
+                                    <td>Seguridad</td>
+                                    <td>Para detectar, prevenir y abordar problemas técnicos, fraudes, actividades ilegales y violaciones de nuestros términos.</td>
+                                    <td>Interés legítimo, Obligación legal</td>
+                                </tr>
+                                <tr>
+                                    <td>Procesamiento de pagos</td>
+                                    <td>Para procesar transacciones y enviar notificaciones relacionadas con sus pagos.</td>
+                                    <td>Ejecución de contrato</td>
+                                </tr>
+                                <tr>
+                                    <td>Cumplimiento legal</td>
+                                    <td>Para cumplir con las obligaciones legales aplicables y los procesos legales.</td>
+                                    <td>Obligación legal</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p>Si reside en el Espacio Económico Europeo (EEE), Reino Unido o Suiza, procesamos sus datos personales de acuerdo con el Reglamento General de Protección de Datos (RGPD) y otras leyes de protección de datos aplicables.</p>
+                </div>
+                
+                <div id="comparticion" class="section">
+                    <h2>4. Compartición de datos</h2>
+                    <p>Podemos compartir su información personal con las siguientes categorías de destinatarios:</p>
+                    
+                    <div class="card">
+                        <h3>Proveedores de servicios</h3>
+                        <p>Compartimos información con proveedores de servicios externos que realizan servicios en nuestro nombre, como:</p>
+                        <ul>
+                            <li>Proveedores de alojamiento y servicios en la nube</li>
+                            <li>Procesadores de pago</li>
+                            <li>Proveedores de análisis y marketing</li>
+                            <li>Servicios de atención al cliente</li>
+                            <li>Proveedores de servicios de correo electrónico y comunicación</li>
+                        </ul>
+                        <p>Estos proveedores de servicios están obligados contractualmente a utilizar la información solo para los fines específicos para los que se les proporciona y a proteger adecuadamente su información.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Socios comerciales</h3>
+                        <p>Podemos compartir información con socios comerciales con los que ofrecemos productos o servicios conjuntos. En tales casos, las prácticas de privacidad de nuestros socios también se aplicarán a la información compartida.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Cumplimiento legal y protección</h3>
+                        <p>Podemos divulgar información si creemos de buena fe que es necesario:</p>
+                        <ul>
+                            <li>Cumplir con una obligación legal, proceso legal o solicitud gubernamental</li>
+                            <li>Hacer cumplir nuestros términos, políticas y acuerdos</li>
+                            <li>Proteger la seguridad, propiedad o derechos de DerejSoft, nuestros usuarios o el público</li>
+                            <li>Detectar, prevenir o abordar fraudes, problemas de seguridad o técnicos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Transacciones corporativas</h3>
+                        <p>Si DerejSoft participa en una fusión, adquisición, reorganización, venta de activos o quiebra, su información puede ser transferida o vendida como parte de esa transacción. Le notificaremos (por ejemplo, por correo electrónico y/o un aviso destacado en nuestros Servicios) sobre cualquier cambio en la propiedad o el uso de su información personal, así como sobre las opciones que pueda tener con respecto a su información personal.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Con su consentimiento</h3>
+                        <p>Podemos compartir su información con terceros cuando usted nos dé su consentimiento para hacerlo.</p>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h3>Información agregada o anonimizada</h3>
+                        <p>Podemos compartir información agregada, anonimizada o desidentificada que no pueda razonablemente utilizarse para identificarle, con fines de investigación, análisis, mejora de servicios y otros fines comerciales.</p>
+                    </div>
+                </div>
+                
+                <div id="derechos" class="section">
+                    <h2>5. Derechos y opciones del usuario</h2>
+                    <p>Dependiendo de su ubicación, puede tener ciertos derechos con respecto a su información personal. Estos pueden incluir:</p>
+                    
+                    <div class="card">
+                        <h3>Derechos de acceso y control</h3>
+                        <ul>
+                            <li><strong>Acceso:</strong> Derecho a solicitar una copia de la información personal que tenemos sobre usted.</li>
+                            <li><strong>Rectificación:</strong> Derecho a solicitar la corrección de información inexacta o incompleta.</li>
+                            <li><strong>Eliminación:</strong> Derecho a solicitar la eliminación de su información personal en determinadas circunstancias.</li>
+                            <li><strong>Restricción:</strong> Derecho a solicitar la restricción del procesamiento de su información personal.</li>
+                            <li><strong>Portabilidad de datos:</strong> Derecho a recibir su información personal en un formato estructurado, de uso común y legible por máquina.</li>
+                            <li><strong>Objeción:</strong> Derecho a oponerse al procesamiento de su información personal en determinadas circunstancias.</li>
+                            <li><strong>Retirada del consentimiento:</strong> Derecho a retirar su consentimiento en cualquier momento cuando el procesamiento se base en su consentimiento.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Cómo ejercer sus derechos</h3>
+                        <p>Para ejercer cualquiera de estos derechos, por favor contáctenos utilizando la información proporcionada en la sección "Información de contacto" de esta política. Responderemos a su solicitud dentro del plazo requerido por la ley aplicable.</p>
+                        <p>Para proteger su privacidad y seguridad, podemos tomar medidas para verificar su identidad antes de conceder acceso o hacer cambios en su información.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Preferencias de comunicación</h3>
+                        <p>Puede optar por no recibir comunicaciones de marketing de nuestra parte siguiendo las instrucciones de cancelación de suscripción incluidas en dichas comunicaciones o contactándonos directamente. Tenga en cuenta que incluso si opta por no recibir comunicaciones de marketing, seguiremos enviándole comunicaciones relacionadas con el servicio que son necesarias para la administración y uso de su cuenta.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Configuración de cookies y tecnologías similares</h3>
+                        <p>La mayoría de los navegadores web están configurados para aceptar cookies por defecto. Si lo prefiere, generalmente puede elegir configurar su navegador para eliminar o rechazar cookies. Tenga en cuenta que si elige eliminar o rechazar cookies, esto podría afectar la disponibilidad y funcionalidad de nuestros Servicios.</p>
+                    </div>
+                </div>
+                
+                <div id="seguridad" class="section">
+                    <h2>6. Seguridad de datos</h2>
+                    <p>La seguridad de su información personal es importante para nosotros. Implementamos medidas de seguridad técnicas, administrativas y físicas diseñadas para proteger su información personal contra acceso, divulgación, alteración y destrucción no autorizados.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Nuestras medidas de seguridad incluyen:</h3>
+                        <ul>
+                            <li>Encriptación de datos sensibles en tránsito y en reposo</li>
+                            <li>Controles de acceso basados en roles para sistemas internos</li>
+                            <li>Firewalls y sistemas de detección de intrusiones</li>
+                            <li>Monitoreo regular de seguridad y pruebas de vulnerabilidad</li>
+                            <li>Planes de respuesta a incidentes</li>
+                            <li>Capacitación en seguridad para empleados</li>
+                        </ul>
+                    </div>
+                    
+                    <p>Sin embargo, ningún método de transmisión por Internet o método de almacenamiento electrónico es 100% seguro. Por lo tanto, aunque nos esforzamos por utilizar medios comercialmente aceptables para proteger su información personal, no podemos garantizar su seguridad absoluta.</p>
+                    
+                    <p>En caso de una violación de datos que afecte su información personal, nos comprometemos a notificarle de acuerdo con los requisitos legales aplicables.</p>
+                </div>
+                
+                <div id="retencion" class="section">
+                    <h2>7. Retención de información</h2>
+                    <p>Conservamos su información personal solo durante el tiempo necesario para cumplir con los fines para los que la recopilamos, incluido el cumplimiento de requisitos legales, contables o de informes.</p>
+                    
+                    <p>Los criterios utilizados para determinar nuestros períodos de retención incluyen:</p>
+                    <ul>
+                        <li>El tiempo que tiene una cuenta activa o utiliza nuestros Servicios</li>
+                        <li>Si existe una obligación legal a la que estamos sujetos (por ejemplo, ciertas leyes requieren que mantengamos registros de sus transacciones durante un cierto período de tiempo antes de que podamos eliminarlos)</li>
+                        <li>Si la retención es aconsejable a la luz de nuestra posición legal (como en relación con estatutos de limitaciones aplicables, litigios o investigaciones regulatorias)</li>
+                    </ul>
+                    
+                    <p>Cuando ya no sea necesario conservar su información personal, la eliminaremos o anonimizaremos de forma segura. Si no es posible eliminar o anonimizar completamente su información (por ejemplo, porque su información ha sido almacenada en archivos de respaldo), entonces aislaremos de forma segura su información de cualquier uso posterior hasta que la eliminación sea posible.</p>
+                </div>
+                
+                <div id="transferencias" class="section">
+                    <h2>8. Transferencias internacionales</h2>
+                    <p>DerejSoft opera globalmente y puede transferir, almacenar y procesar su información en países distintos a su país de residencia, incluidos los Estados Unidos y otros países que pueden tener leyes de protección de datos diferentes a las de su país.</p>
+                    
+                    <p>Cuando transferimos información personal desde el Espacio Económico Europeo (EEE), Reino Unido o Suiza a países que la Comisión Europea no ha reconocido que proporcionan un nivel adecuado de protección de datos, implementamos salvaguardas apropiadas, como cláusulas contractuales estándar aprobadas por la Comisión Europea, para proteger su información personal.</p>
+                    
+                    <p>Si tiene preguntas sobre las transferencias internacionales de su información personal o las salvaguardas que hemos implementado, puede contactarnos utilizando la información proporcionada en la sección "Información de contacto".</p>
+                </div>
+                
+                <div id="menores" class="section">
+                    <h2>9. Privacidad de menores</h2>
+                    <p>Nuestros Servicios no están dirigidos a personas menores de 16 años, y no recopilamos a sabiendas información personal de niños menores de 16 años. Si descubrimos que hemos recopilado información personal de un niño menor de 16 años sin verificación del consentimiento parental, tomaremos medidas para eliminar esa información lo más rápido posible.</p>
+                    
+                    <p>Si usted es padre o tutor y cree que su hijo nos ha proporcionado información personal, por favor contáctenos para que podamos tomar las medidas necesarias.</p>
+                </div>
+                
+                <div id="enlaces" class="section">
+                    <h2>10. Enlaces a terceros</h2>
+                    <p>Nuestros Servicios pueden contener enlaces a sitios web, productos o servicios de terceros que no son propiedad ni están controlados por DerejSoft. Esta Política de Privacidad solo se aplica a nuestros Servicios. No tenemos control sobre, y no somos responsables por, las prácticas de privacidad de terceros.</p>
+                    
+                    <div class="highlight-box">
+                        <p>Le recomendamos que revise las políticas de privacidad de cualquier sitio web o servicio de terceros que visite o utilice para comprender cómo recopilan y utilizan su información.</p>
+                    </div>
+                </div>
+                
+                <div id="cambios" class="section">
+                    <h2>11. Cambios en la política</h2>
+                    <p>Podemos actualizar esta Política de Privacidad de vez en cuando para reflejar cambios en nuestras prácticas o por otras razones operativas, legales o regulatorias. Si realizamos cambios materiales, le notificaremos a través de un aviso en nuestro sitio web o por correo electrónico antes de que el cambio entre en vigor.</p>
+                    
+                    <p>Le animamos a revisar periódicamente esta página para obtener la información más reciente sobre nuestras prácticas de privacidad. La fecha de la última actualización se indica al principio de esta política.</p>
+                    
+                    <p>Su uso continuado de nuestros Servicios después de la publicación de cambios a esta Política de Privacidad constituirá su aceptación de dichos cambios.</p>
+                </div>
+                
+                <div id="contacto" class="section">
+                    <h2>12. Información de contacto</h2>
+                    <p>Si tiene preguntas, inquietudes o solicitudes relacionadas con esta Política de Privacidad o el procesamiento de su información personal, puede contactarnos a través de:</p>
+                    
+                    <div class="card">
+                        <h3>Información de contacto</h3>
+                        <div class="redes">
+                            <ul>
+                                <li><a href="https://www.facebook.com/share/1JKws2oMEp/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <img src="../imagenes/icons8-facebook-logo.svg" alt="Facebook">
+                                </a></li>
+                                <li><a href="https://www.instagram.com/derejsoft/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <img src="../imagenes/icons8-instagram-logo.svg" alt="Instagram">
+                                </a></li>
+                                <li><a href="https://www.linkedin.com/in/derejsoft-121509344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <img src="../imagenes/icons8-linkedin-logo.svg" alt="Linkedin">
+                                </a></li>
+                                <li><a href="https://www.tiktok.com/@derejsoft?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                    <img src="../imagenes/icons8-tiktok-logo.svg" alt="TikTok">
+                                </a></li>
+                                <li><a href="https://wa.me/8294772269" target="_blank" rel="noopener noreferrer" aria-label="Abrir chat de WhatsApp">
+                                    <img src="../imagenes/icons8-whatsapp-logo.svg" alt="Whatsapp">
+                                </a></li>
+                                <li><a href="mailto:info.admin@derejsoft.com" target="_blank" aria-label="Enviar Correo Electrónico">
+                                    <img src="../imagenes/icons8-gmail.svg" alt="Correo Electrónico">
+                                </a></li>
+                            </ul>
+                            <p>Para los residentes del EEE, Reino Unido o Suiza, también puede tener derecho a presentar una queja ante su autoridad local de protección de datos si no está satisfecho con nuestra respuesta a su solicitud.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h3>Delegado de Protección de Datos</h3>
+                        <p>Hemos designado un Delegado de Protección de Datos (DPO) responsable de supervisar las cuestiones relacionadas con esta política de privacidad. Si tiene alguna pregunta sobre esta política o cómo manejamos sus datos personales, puede contactar con nuestro DPO en <a href="mailto:info.admin@derejsoft.com" class="__cf_email__" data-cfemail="aac3c4ccc584cbcec7c3c4eacecfd8cfc0d9c5ccde84c9c5c7">[email&#160;DerejSoft]</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Derej<span>Soft</span></div>
+                
+                <div class="footer-links">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../index.html#servicios">Servicios</a>
+                    <a href="Politicas_de _privacidad.html">Politicas de privacidad</a>
+                    <a href="Terminos_de_Servicios.html">Términos y Condiciones</a>
+                    <a href="../index.html#contacto">Contacto</a>
+                </div>
+                <div class="copyright">© 2025 DerejSoft. Todos los derechos reservados.</div>
+            </div>
+        </div>
+    </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

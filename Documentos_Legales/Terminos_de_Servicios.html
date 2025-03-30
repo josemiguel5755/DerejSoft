@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones - DerejSoft</title>
+    <style>
+        :root {
+            --primary-color: #3a6ea5;
+            --secondary-color: #004e98;
+            --accent-color: #ff6b6b;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --border-color: #ddd;
+            --primary:#ffe65d;
+            --text: #a2231d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+            padding: 0;
+            margin: 0;
+            -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--text);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .terms-container {
+            padding: 3rem 0;
+            width: 100%;
+        }
+        
+        .terms-content {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 100%;
+        }
+        
+        .last-updated {
+            text-align: right;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+            word-wrap: break-word;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            word-wrap: break-word;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            word-wrap: break-word;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+            transition: transform 0.2s ease;
+        }
+        
+        .section:hover {
+            transform: translateX(5px);
+        }
+        
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .highlight {
+            background-color: var(--light-gray);
+            padding: 1rem;
+            border-left: 4px solid var(--accent-color);
+            margin: 1.5rem 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .table-of-contents {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+        
+        .table-of-contents h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .table-of-contents ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+        
+        .table-of-contents li {
+            margin-bottom: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+        
+        .table-of-contents li:hover {
+            transform: translateX(5px);
+        }
+        
+        .table-of-contents a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+            display: inline-block;
+            word-wrap: break-word;
+        }
+        
+        .table-of-contents a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+            width: 100%;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo span {
+            color: var(--text);
+        }
+        
+        .redes ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-left: 0;
+            padding-left: 0;
+            justify-content: center;
+        }
+        
+        .redes li {
+            text-decoration: none;
+            list-style: none;
+            margin-bottom: 15px;
+        }
+        
+        .redes img {
+            width: 40px;
+            height: auto;
+        }
+        
+        .footer-links {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+            opacity: 0.9;
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Enhanced responsive styles */
+        @media (max-width: 992px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .logo {
+                font-size: 32px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .terms-content {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .logo {
+                font-size: 28px;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .footer-links a {
+                margin: 0;
+            }
+            
+            .redes ul {
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .terms-content {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            h3 {
+                font-size: 1.1rem;
+            }
+            
+            .logo {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .highlight {
+                padding: 0.75rem;
+            }
+            
+            .table-of-contents {
+                padding: 1rem;
+            }
+            
+            .redes ul {
+                gap: 15px;
+            }
+            
+            .redes img {
+                width: 32px;
+            }
+            
+            ul, ol {
+                margin-left: 1.5rem;
+            }
+        }
+        
+        /* Fix for very small screens */
+        @media (max-width: 320px) {
+            .terms-content {
+                padding: 0.75rem;
+            }
+            
+            .logo {
+                font-size: 20px;
+            }
+            
+            .subtitle {
+                font-size: 0.9rem;
+            }
+            
+            .redes ul {
+                gap: 10px;
+            }
+            
+            .redes img {
+                width: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Derej<span>Soft</span></div>
+            <div class="subtitle">Términos y Condiciones</div>
+        </div>
+    </header>
+    
+    <div class="terms-container">
+        <div class="container">
+            <div class="terms-content">
+                <div class="last-updated">Última actualización: 29 de marzo de 2025</div>
+                
+                <h1>Términos y Condiciones</h1>
+                
+                <div class="table-of-contents">
+                    <h3>Contenido</h3>
+                    <ul>
+                        <li><a href="#aceptacion">1. Aceptación de términos</a></li>
+                        <li><a href="#definiciones">2. Definiciones</a></li>
+                        <li><a href="#registro">3. Registro de cuenta</a></li>
+                        <li><a href="#licencias">4. Licencias y restricciones</a></li>
+                        <li><a href="#contenido">5. Contenido del usuario</a></li>
+                        <li><a href="#propiedad">6. Propiedad intelectual</a></li>
+                        <li><a href="#privacidad">7. Privacidad</a></li>
+                        <li><a href="#modificaciones">8. Modificaciones</a></li>
+                        <li><a href="#terminacion">9. Terminación</a></li>
+                        <li><a href="#garantias">10. Exclusiones de garantías</a></li>
+                        <li><a href="#limitacion">11. Limitación de responsabilidad</a></li>
+                        <li><a href="#indemnizacion">12. Indemnización</a></li>
+                        <li><a href="#ley">13. Ley aplicable</a></li>
+                        <li><a href="#disputas">14. Resolución de disputas</a></li>
+                        <li><a href="#contacto">15. Información de contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div id="aceptacion" class="section">
+                    <h2>1. Aceptación de términos</h2>
+                    <p>Al acceder o utilizar los servicios, productos, aplicaciones o sitio web de DerejSoft (en adelante, "el Servicio"), usted acepta estar legalmente vinculado por estos Términos y Condiciones. Si no está de acuerdo con alguno de estos términos, no debe utilizar nuestros servicios.</p>
+                    <p>Estos términos constituyen un acuerdo legal entre usted y DerejSoft con respecto a su uso del Servicio. Al registrarse, acceder o utilizar nuestros servicios, usted confirma que ha leído, entendido y aceptado estos términos en su totalidad.</p>
+                    <div class="highlight">
+                        <p>Por favor, lea estos términos cuidadosamente antes de utilizar nuestros servicios. El uso continuado de nuestros servicios después de cualquier modificación de estos términos constituirá su aceptación de dichos cambios.</p>
+                    </div>
+                </div>
+                
+                <div id="definiciones" class="section">
+                    <h2>2. Definiciones</h2>
+                    <p>Para los propósitos de estos Términos y Condiciones:</p>
+                    <ul>
+                        <li><strong>"DerejSoft"</strong>, "nosotros", "nos" o "nuestro" se refiere a la empresa DerejSoft, sus subsidiarias, afiliados, directores, funcionarios, empleados, agentes y contratistas.</li>
+                        <li><strong>"Usuario"</strong>, "usted" o "su" se refiere a cualquier persona que acceda o utilice el Servicio.</li>
+                        <li><strong>"Servicio"</strong> se refiere a todos los productos, aplicaciones, sitios web y servicios ofrecidos por DerejSoft.</li>
+                        <li><strong>"Contenido"</strong> se refiere a cualquier información, datos, texto, software, gráficos, mensajes u otros materiales que se muestren o se pongan a disposición a través del Servicio.</li>
+                        <li><strong>"Contenido del Usuario"</strong> se refiere a cualquier contenido que usted envíe, publique o transmita a través del Servicio.</li>
+                        <li><strong>"Cuenta"</strong> se refiere a la relación establecida entre DerejSoft y un Usuario cuando este último se registra en el Servicio.</li>
+                    </ul>
+                </div>
+                
+                <div id="registro" class="section">
+                    <h2>3. Registro de cuenta</h2>
+                    <p>Para utilizar ciertas funciones del Servicio, es posible que deba registrarse y crear una cuenta. Al registrarse, usted acepta proporcionar información precisa, actual y completa, y mantenerla actualizada.</p>
+                    <p>Usted es responsable de mantener la confidencialidad de su contraseña y de todas las actividades que ocurran bajo su cuenta. Debe notificarnos inmediatamente sobre cualquier uso no autorizado de su cuenta o cualquier otra violación de seguridad.</p>
+                    <p>Nos reservamos el derecho de rechazar el registro, cancelar cuentas o eliminar o editar contenido a nuestra sola discreción, sin previo aviso y sin responsabilidad hacia usted.</p>
+                    <p>Los usuarios menores de 18 años deben obtener el consentimiento de sus padres o tutores legales antes de utilizar el Servicio.</p>
+                </div>
+                
+                <div id="licencias" class="section">
+                    <h2>4. Licencias y restricciones</h2>
+                    <p>DerejSoft le otorga una licencia limitada, no exclusiva, no transferible y revocable para utilizar el Servicio de acuerdo con estos Términos y Condiciones.</p>
+                    <p>Usted no puede:</p>
+                    <ul>
+                        <li>Utilizar el Servicio para cualquier propósito ilegal o no autorizado.</li>
+                        <li>Modificar, adaptar, traducir, realizar ingeniería inversa, descompilar o desensamblar cualquier parte del Servicio.</li>
+                        <li>Eliminar, alterar u ocultar cualquier aviso de derechos de autor, marca registrada u otros derechos de propiedad.</li>
+                        <li>Acceder o intentar acceder a la cuenta de otro usuario sin autorización.</li>
+                        <li>Interferir o interrumpir el Servicio o los servidores o redes conectados al Servicio.</li>
+                        <li>Recopilar o almacenar datos personales de otros usuarios sin su consentimiento.</li>
+                        <li>Utilizar robots, arañas, raspadores o cualquier otro medio automatizado para acceder al Servicio.</li>
+                        <li>Revender, sublicenciar o transferir el Servicio o cualquier parte del mismo a terceros.</li>
+                    </ul>
+                </div>
+                
+                <div id="contenido" class="section">
+                    <h2>5. Contenido del usuario</h2>
+                    <p>Usted conserva todos los derechos sobre el Contenido del Usuario que envíe, publique o muestre en o a través del Servicio. Al enviar, publicar o mostrar Contenido del Usuario, usted otorga a DerejSoft una licencia mundial, no exclusiva, libre de regalías, transferible y sublicenciable para usar, reproducir, modificar, adaptar, publicar, traducir, crear obras derivadas, distribuir y mostrar dicho Contenido del Usuario en relación con la operación y provisión del Servicio.</p>
+                    <p>Usted declara y garantiza que:</p>
+                    <ul>
+                        <li>Posee o tiene los derechos necesarios para proporcionar el Contenido del Usuario y otorgar la licencia anterior.</li>
+                        <li>El Contenido del Usuario no infringe los derechos de propiedad intelectual, privacidad, publicidad u otros derechos de terceros.</li>
+                        <li>El Contenido del Usuario no contiene material difamatorio, obsceno, ofensivo, indecente o ilegal.</li>
+                        <li>El Contenido del Usuario no contiene virus, adware, spyware, gusanos u otro código malicioso.</li>
+                    </ul>
+                    <p>DerejSoft se reserva el derecho, pero no tiene la obligación, de monitorear, editar o eliminar cualquier Contenido del Usuario que considere, a su sola discreción, violatorio de estos Términos o inapropiado por cualquier motivo.</p>
+                </div>
+                
+                <div id="propiedad" class="section">
+                    <h2>6. Propiedad intelectual</h2>
+                    <p>El Servicio y su contenido original, características y funcionalidad son propiedad de DerejSoft y están protegidos por derechos de autor, marcas registradas, patentes, secretos comerciales y otras leyes de propiedad intelectual o derechos de propiedad.</p>
+                    <p>Las marcas comerciales, logotipos, nombres de productos y servicios de DerejSoft que aparecen en el Servicio son marcas comerciales de DerejSoft. No se otorga ningún derecho o licencia para utilizar dichas marcas sin el consentimiento previo por escrito de DerejSoft.</p>
+                    <p>Cualquier retroalimentación, comentarios o sugerencias que proporcione con respecto al Servicio se considera no confidencial y DerejSoft tendrá derecho a utilizar dicha retroalimentación sin restricciones y sin compensación para usted.</p>
+                </div>
+                
+                <div id="privacidad" class="section">
+                    <h2>7. Privacidad</h2>
+                    <p>Su privacidad es importante para nosotros. Nuestra Política de Privacidad, que se incorpora a estos Términos por referencia, describe cómo recopilamos, utilizamos y divulgamos la información que obtenemos de usted cuando utiliza nuestro Servicio.</p>
+                    <p>Al utilizar el Servicio, usted acepta la recopilación y uso de su información de acuerdo con nuestra Política de Privacidad.</p>
+                    <p>Implementamos medidas de seguridad diseñadas para proteger su información, pero no podemos garantizar que su información siempre permanecerá segura.</p>
+                </div>
+                
+                <div id="modificaciones" class="section">
+                    <h2>8. Modificaciones</h2>
+                    <p>DerejSoft se reserva el derecho, a su sola discreción, de modificar o reemplazar estos Términos en cualquier momento. Si una revisión es material, proporcionaremos al menos 30 días de aviso antes de que los nuevos términos entren en vigencia. Lo que constituye un cambio material será determinado a nuestra sola discreción.</p>
+                    <p>Al continuar accediendo o utilizando nuestro Servicio después de que esas revisiones entren en vigencia, usted acepta estar sujeto a los términos revisados. Si no está de acuerdo con los nuevos términos, debe dejar de utilizar el Servicio.</p>
+                    <p>También podemos, sin previo aviso, cambiar los servicios; dejar de proporcionar los servicios o características de los servicios; o crear límites para los servicios.</p>
+                </div>
+                
+                <div id="terminacion" class="section">
+                    <h2>9. Terminación</h2>
+                    <p>Podemos terminar o suspender su acceso al Servicio inmediatamente, sin previo aviso o responsabilidad, por cualquier motivo, incluyendo, sin limitación, si usted incumple estos Términos.</p>
+                    <p>Todas las disposiciones de los Términos que por su naturaleza deberían sobrevivir a la terminación sobrevivirán a la terminación, incluyendo, sin limitación, disposiciones de propiedad, renuncias de garantía, indemnización y limitaciones de responsabilidad.</p>
+                    <p>Tras la terminación, su derecho a utilizar el Servicio cesará inmediatamente. Si desea terminar su cuenta, puede simplemente dejar de utilizar el Servicio o contactarnos para solicitar la eliminación de su cuenta.</p>
+                </div>
+                
+                <div id="garantias" class="section">
+                    <h2>10. Exclusiones de garantías</h2>
+                    <p>El Servicio se proporciona "tal cual" y "según disponibilidad" sin garantías de ningún tipo, ya sean expresas o implícitas.</p>
+                    <p>DerejSoft no garantiza que:</p>
+                    <ul>
+                        <li>El Servicio cumplirá con sus requisitos específicos.</li>
+                        <li>El Servicio será ininterrumpido, oportuno, seguro o libre de errores.</li>
+                        <li>Los resultados que puedan obtenerse del uso del Servicio serán precisos o confiables.</li>
+                        <li>La calidad de cualquier producto, servicio, información u otro material comprado u obtenido por usted a través del Servicio cumplirá con sus expectativas.</li>
+                        <li>Cualquier error en el Servicio será corregido.</li>
+                    </ul>
+                    <div class="highlight">
+                        <p>En la medida máxima permitida por la ley aplicable, DerejSoft renuncia a todas las garantías, ya sean expresas, implícitas o estatutarias, incluyendo, pero no limitado a, cualquier garantía de comerciabilidad, idoneidad para un propósito particular, título y no infracción.</p>
+                    </div>
+                </div>
+                
+                <div id="limitacion" class="section">
+                    <h2>11. Limitación de responsabilidad</h2>
+                    <p>En ningún caso DerejSoft, sus directores, empleados, socios, agentes, proveedores o afiliados serán responsables por cualquier daño indirecto, incidental, especial, consecuente o punitivo, incluyendo, sin limitación, pérdida de beneficios, datos, uso, buena voluntad u otras pérdidas intangibles, resultantes de:</p>
+                    <ul>
+                        <li>Su acceso o uso o incapacidad para acceder o usar el Servicio.</li>
+                        <li>Cualquier conducta o contenido de terceros en el Servicio.</li>
+                        <li>Cualquier contenido obtenido del Servicio.</li>
+                        <li>Acceso no autorizado, uso o alteración de sus transmisiones o contenido.</li>
+                    </ul>
+                    <p>En ningún caso la responsabilidad total de DerejSoft hacia usted por todos los daños, pérdidas y causas de acción excederá la cantidad pagada por usted a DerejSoft, si la hubiera, por su uso del Servicio durante los seis (6) meses anteriores a la causa de la acción.</p>
+                </div>
+                
+                <div id="indemnizacion" class="section">
+                    <h2>12. Indemnización</h2>
+                    <p>Usted acepta defender, indemnizar y mantener indemne a DerejSoft, sus afiliados, licenciantes y proveedores de servicios, y sus respectivos funcionarios, directores, empleados, contratistas, agentes, licenciantes, proveedores, sucesores y cesionarios de y contra cualquier reclamación, responsabilidad, daño, juicio, premio, pérdida, costo, gasto o tarifa (incluyendo honorarios razonables de abogados) que surjan de o estén relacionados con su violación de estos Términos o su uso del Servicio, incluyendo, pero no limitado a, su Contenido del Usuario, cualquier uso de los contenidos, servicios e productos del Servicio que no sean los expresamente autorizados en estos Términos o su uso de cualquier información obtenida del Servicio.</p>
+                </div>
+                
+                <div id="ley" class="section">
+                    <h2>13. Ley aplicable</h2>
+                    <p>Estos Términos se regirán e interpretarán de acuerdo con las leyes del país en el que DerejSoft tiene su sede principal, sin tener en cuenta sus disposiciones sobre conflictos de leyes.</p>
+                    <p>Nuestra falta de hacer cumplir cualquier derecho o disposición de estos Términos no se considerará una renuncia a esos derechos. Si alguna disposición de estos Términos es considerada inválida o inaplicable por un tribunal, las disposiciones restantes de estos Términos permanecerán en vigor.</p>
+                </div>
+                
+                <div id="disputas" class="section">
+                    <h2>14. Resolución de disputas</h2>
+                    <p>Cualquier disputa que surja de o en relación con estos Términos, incluyendo cualquier cuestión relacionada con su existencia, validez o terminación, será resuelta mediante arbitraje de acuerdo con las reglas de arbitraje de la institución de arbitraje designada en el país donde DerejSoft tiene su sede principal.</p>
+                    <p>El número de árbitros será uno. La sede, o lugar legal, del arbitraje será la ciudad donde DerejSoft tiene su sede principal. El idioma a utilizar en el procedimiento arbitral será el idioma oficial del país donde DerejSoft tiene su sede principal.</p>
+                    <p>Antes de iniciar cualquier procedimiento de arbitraje, usted acepta intentar resolver la disputa informalmente contactando a DerejSoft. Si la disputa no se resuelve dentro de los 30 días posteriores a dicho contacto, cualquiera de las partes puede iniciar el arbitraje.</p>
+                </div>
+                
+                <div id="contacto" class="section">
+                    <h2>15. Información de contacto</h2>
+                    <div class="redes">
+                        <ul>
+                            <li><a href="https://www.facebook.com/share/1JKws2oMEp/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <img src="../imagenes/icons8-facebook-logo.svg" alt="Facebook">
+                            </a></li>
+                            <li><a href="https://www.instagram.com/derejsoft/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <img src="../imagenes/icons8-instagram-logo.svg" alt="Instagram">
+                            </a></li>
+                            <li><a href="https://www.linkedin.com/in/derejsoft-121509344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <img src="../imagenes/icons8-linkedin-logo.svg" alt="Linkedin">
+                            </a></li>
+                            <li><a href="https://www.tiktok.com/@derejsoft?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                <img src="../imagenes/icons8-tiktok-logo.svg" alt="TikTok">
+                            </a></li>
+                            <li><a href="https://wa.me/8294772269" target="_blank" rel="noopener noreferrer" aria-label="Abrir chat de WhatsApp">
+                                <img src="../imagenes/icons8-whatsapp-logo.svg" alt="Whatsapp">
+                            </a></li>
+                            <li><a href="mailto:info.admin@derejsoft.com" target="_blank" aria-label="Enviar Correo Electrónico">
+                                <img src="../imagenes/icons8-gmail.svg" alt="Correo Electrónico">
+                            </a></li>
+                        </ul>
+                        <p>Nos esforzamos por responder a todas las consultas dentro de las 48 horas hábiles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Derej<span>Soft</span></div>
+                <div class="footer-links">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../index.html#servicios">Servicios</a>
+                    <a href="Politicas_de _privacidad.html">Politicas de privacidad</a>
+                    <a href="Terminos_de_Servicios.html">Términos de servicios</a>
+                    <a href="../index.html#contacto">Contacto</a>
+                </div>
+                <div class="copyright">© 2025 DerejSoft. Todos los derechos reservados.</div>
+            </div>
+        </div>
+    </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
