@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="estilos.css">
     <meta name="google-site-verification" content="U8NxFe4ImPVgVONMKLManzbFzU_wdJkFNd8_-gbuSBo" />
     <meta name="google-site-verification" content="nCp--AE32HJM6zSVggKokuL5yRJ2mJ9DlwJadmQxgyM" />
+    <!-- Agrega esto en el <head> o antes de </body> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
   
 </head>
 <body>
@@ -93,13 +95,29 @@
 
         <section id="contacto">
             <h2>Contáctanos</h2>
-            <form id="contact-form">
+            <form
+                id="contact-form"
+                action="https://formsubmit.co/derejsoft2003@gmail.com"
+                method="POST"
+                target="hidden-iframe"
+            >
                 <input type="text" name="nombre" placeholder="Nombre" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+                <!-- Campos ocultos obligatorios para FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde el formulario">
+                <input type="hidden" name="_next" value="">
+
                 <button type="submit" class="submit-button">Enviar Mensaje</button>
             </form>
+
+            <!-- Iframe oculto para evitar la redirección -->
+            <iframe name="hidden-iframe" id="hidden-iframe" style="display: none;"></iframe>
+
         </section>
+
 
     </main>
 
@@ -123,5 +141,6 @@
         </nav>
     </footer>
     <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
