@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // =============================================
+    // ===================================================
     // Animaciones al hacer scroll (Intersection Observer)
-    // =============================================
+    // ===================================================
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
